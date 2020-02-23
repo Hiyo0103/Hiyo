@@ -1,6 +1,8 @@
 '''
-This is an extremely messy collaborative document for the AI & ML course at MPS
-2-19-20
+Hiyo Kobari
+This linear regression shows the relation between SAT score and GPA.
+This data sets are from
+https://www.statcrunch.com/app/index.php?dataid=1583665
 '''
 
 import numpy as np
@@ -43,8 +45,8 @@ def plot_regression_line(x, y, b):
 
 def main():
     #observations
-    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12])
+    x = np.array([2.40, 2.52, 2.54, 2.74, 2.83, 2.91, 3.00, 3.00, 3.01, 3.01, 3.02, 3.07, 3.08, 3.08, 3.12, 3.17, 3.17, 3.17, 3.17, 3.19, 3.19, 3.19, 3.20, 3.21, 3.24, 3.28, 3.28, 3.29, 3.29, 3.31, 3.32, 3.34, 3.37, 3.38, 3.39, 3.40, 3.41, 3.42, 3.44, 3.47, 3.48, 3.49, 3.50, 3.51, 3.52, 3.54, 3.58, 3.59, 3.60, 3.61, 3.62, 3.64, 3.65, 3.71, 3.73, 3.76, 3.81])
+    y = np.array([1714, 1664, 1760, 1685, 1693, 1670, 1764, 1764, 1792, 1850, 1735, 1775, 1735, 1712, 1773, 1872, 1755, 1674, 1842, 1786, 1761, 1722, 1663, 1687, 1974, 1826, 1821, 1855, 1880, 1849, 1808, 1954, 1865, 1966, 1990, 1956, 1979, 1907, 1879, 1953, 1891, 1964, 1893, 2041, 1850, 1934, 1931, 1933, 1975, 2021, 2015, 1997, 2020, 1936, 1987, 1962, 2050])
 
     # estimated coefficients
     b = estimate_coef(x, y)
